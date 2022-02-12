@@ -1,0 +1,86 @@
+.gallery {
+    @media only screen and (min-width: 1337px) {
+        &__item:nth-child(-n+3) {
+            margin: 75px 0;
+        }
+    }
+    @media only screen and (max-width: 1337px) {
+        &__item:nth-child(-n+4) {
+            margin: 60px 0 0;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        &__item:nth-child(-n+6) {
+            margin-top: 44px;
+            margin-bottom: -6px;
+        }
+    }
+    @media only screen and (max-width: 420px) {
+        &__item:nth-child(-n+6) {
+            margin-top: 40px;
+            margin-bottom: 1px;
+        }
+    }
+    &__image {
+        @media only screen and (max-width: 1024px) {
+            width: 330px;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 280px;
+        }
+    }
+    &__title {
+        @include font-normal;
+        @extend %font-prim;
+        margin-top: 20px;
+    }
+    &__border {
+        margin-top: -20px;
+        @media only screen and (max-width: 1024px) {
+            margin-top: -10px;
+        }
+        @media only screen and (max-width: 420px) {
+            margin-top: -7px;
+        }
+        &::after {
+            content: " ";
+            display: block;
+            width: 300px;
+            height: 1px;
+            border-top: 2px solid $color-dark-red;
+            @media only screen and (max-width: 1024px) {
+                width: 150px;
+            }
+        }
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        @extend %font-add;
+        font-weight: 100;
+        font-style: normal;
+        color: black;
+        &:hover {
+            color: $color-gold;
+        }
+        &.gallery {
+            &__tour {
+                @include font-a;
+                margin: 10px 0;
+            }
+            &__map {
+                @include font-a-small;
+            }
+        }
+    }
+}
+
+.margin15 {
+    margin-top: -15px;
+    @media only screen and (max-width: 768px) {
+        margin-top: -10px;
+    }
+    @media only screen and (max-width: 420px) {
+        margin-top: -7px;
+    }
+}

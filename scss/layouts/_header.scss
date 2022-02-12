@@ -1,0 +1,26 @@
+.header__wrapper {
+    flex-direction: column;
+}
+
+h1 {
+    color: $color-gold;
+    @include font;
+    @extend %font-prim;
+}
+
+.header__border {
+    margin-top: -25px;
+    @media only screen and (max-width: 1024px) {
+        margin-top: -10px;
+    }
+    @media only screen and (max-width: 420px) {
+        margin-top: 0;
+    }
+    &::after {
+        content: " ";
+        display: block;
+        width: 100%;
+        height: 1px;
+        border-top: 3px solid $color-dark-red;
+    }
+}

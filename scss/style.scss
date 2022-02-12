@@ -1,0 +1,10 @@
+@import "base/normalize";
+//abstracts 
+@import "abstract/constants";
+@import "abstract/fonts";
+@import "abstract/mixins";
+// components
+@import "components/gallery";
+// layouts
+@import "layouts/header";
+@import "layouts/wrapper";

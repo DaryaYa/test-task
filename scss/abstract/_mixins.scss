@@ -1,0 +1,75 @@
+@mixin font {
+    font: {
+        size: 80px;
+        weight: normal;
+    }
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    @media only screen and (max-width: 1024px) {
+        font-size: 50px;
+        line-height: 75px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    @media only screen and (max-width:420px) {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@mixin font-normal {
+    font: {
+        size: 32px;
+        weight: normal;
+    }
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    @media only screen and (max-width: 1024px) {
+        font-size: 28px;
+        line-height: 31px;
+        letter-spacing: 3px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    @media only screen and (max-width: 420px) {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 5px;
+    }
+}
+
+@mixin font-a {
+    font-size: 22px;
+    line-height: 26px;
+    @media only screen and (max-width: 1024px) {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    @media only screen and (max-width:420px) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@mixin font-a-small {
+    font-size: 18px;
+    line-height: 21px;
+    @media only screen and (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    // @media only screen and (max-width: 768px) {
+    //     font-size: 16px;
+    //     line-height: 19px;
+    // }
+    // @media only screen and (max-width:420px) {
+    // }
+}
